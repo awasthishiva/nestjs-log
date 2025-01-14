@@ -78,5 +78,8 @@
     },
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "dependencies": {
+    "@types/ws": "^8.5.4"
   }
 }

@@ -18,9 +18,23 @@ export class KurElasticsearchService {
           this.type = options.elasticsearch.type;
         }
 
+        const clientOptions: any = {
+          nodes: options.elasticsearch.nodes,
+        };
+
+        // Conditionally add 'auth' if it exists
+        if (options.elasticsearch.auth) {
+          clientOptions.auth = options.elasticsearch.auth;
+        }
+
+        // Conditionally add 'ssl' if it exists
+        if (options.elasticsearch.ssl) {
+          clientOptions.ssl = options.elasticsearch.ssl;
+        }
+
         import('@elastic/elasticsearch').then(
           (x) =>
-            (this.client = new x.Client({ node: options.elasticsearch.node }))
+            (this.client = new x.Client(clientOptions))
         );
       }
     }

@@ -1,8 +1,8 @@
 {
-  "name": "@syukurilexs/nestjs-log",
-  "version": "1.2.1",
-  "description": "NestJS syukurilexs logger",
-  "author": "Syukur <syukurilexs@gmail.com>",
+  "name": "@awasthishiva/nestjs-log",
+  "version": "1.0.0",
+  "description": "NestJS logger",
+  "author": "Avnish <awasthishiva@gmail.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
   "main": "dist/index.js",
@@ -29,9 +29,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/syukurilexs/nestjs-log.git"
+    "url": "https://github.com/awasthishiva/nestjs-log"
   },
-  "bugs": "https://github.com/syukurilexs/nestjs-log.git",
+  "bugs": "https://github.com/awasthishiva/nestjs-log",
   "peerDependencies": {
     "@elastic/elasticsearch": "^7.10.0",
     "@nestjs/common": "^7.0.0"

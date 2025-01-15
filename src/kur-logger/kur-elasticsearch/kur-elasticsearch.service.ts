@@ -53,7 +53,7 @@ export class KurElasticsearchService {
       try {
         await this.client.index({
           index: this.formatFileName('log-' + this.prefix),
-          type: this.type,
+          //type: this.type,
           body: {
             timestamp: new Date(),
             level,
@@ -72,7 +72,7 @@ export class KurElasticsearchService {
       try {
         await this.client.index({
           index: this.formatFileName('log-' + this.prefix),
-          type: this.type,
+          //type: this.type,
           body: {
             timestamp: new Date(),
             level: 'error',
@@ -103,7 +103,7 @@ export class KurElasticsearchService {
       try {
         await this.client.index({
           index: this.formatFileName(index),
-          type: this.type,
+          //type: this.type,
           body: msg,
         });
       } catch (error) {

@@ -1,6 +1,6 @@
 {
   "name": "@awasthishiva/nestjs-log",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NestJS logger",
   "author": "Avnish <awasthishiva@gmail.com>",
   "license": "MIT",
